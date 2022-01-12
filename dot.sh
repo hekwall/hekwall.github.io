@@ -7,3 +7,5 @@ git init
 git remote add origin ssh://git@ssh.github.com:443/hekwall/dot.git
 git fetch
 git checkout main
+git submodule update --init --recursive
+git config user.email "herman@ekwall.dev"
