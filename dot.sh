@@ -2,10 +2,6 @@
 # Initialize dotfiles
 # curl -L https://blog.ekwall.dev/dot.sh | sh
 
-cd ~
-git init
-git config user.email "herman@ekwall.dev"
-git remote add origin ssh://git@ssh.github.com:443/hekwall/dot.git
-git fetch
-git checkout main
-git submodule update --init --recursive
+curl -fLo $HOME/.local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x $HOME/.local/bin/yadm
+cd $HOME
+$HOME/.local/bin/yadm clone -f ssh://git@ssh.github.com:443/hekwall/dot.git
