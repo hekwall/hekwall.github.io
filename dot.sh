@@ -2,7 +2,7 @@
 # Initialize dotfiles
 # curl -L https://blog.ekwall.dev/dot.sh | sh
 
-VERSION=3.2.1
+VERSION=3.2.2
 mkdir -p $HOME/.local/bin
 mkdir -p $HOME/.local/share/man/man1
 curl -fLo $HOME/.local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/$VERSION/yadm && chmod a+x $HOME/.local/bin/yadm
