@@ -1,6 +1,6 @@
 #!/bin/sh
 # Initialize dotfiles
-# curl -L https://blog.ekwall.dev/dot.sh | sh
+# curl -L https://ekwall.dev/dot.sh | sh
 
 VERSION=3.2.2
 mkdir -p $HOME/.local/bin

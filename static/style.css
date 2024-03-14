@@ -1,5 +1,15 @@
 body {
-    margin: 2em auto;
-    padding: 1em;
+    margin: 2em 1em;
     line-height: 1.4;
+}
+
+/* TODO: Unclear if this is the best way to switch color scheme */
+:root {
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
 }
