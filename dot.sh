@@ -4,4 +4,4 @@
 
 DEST="$HOME/.dot"
 [ -d $DEST ] || git clone git@github.com:hekwall/dot.git $DEST
-printf "Run: \n\tmake -C $DEST work\n\tmake -C $DEST home\n"
+make -C "$DEST" help | sed "s~make~make -C $DEST~"
